@@ -1,47 +1,16 @@
-const String DEVICE_ID = "uixmjftb2f-vm03dvd5vz-q7t90v2roq";
+const String DEVICE_ID = "XXXX";
 
 
 /*BEGIN CRYPT CONFIGS**************************************************************/
 const char RSA_PRIVATE_KEY[] = R"KEY(
 -----BEGIN PRIVATE KEY-----
-MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrBA02w0xRpdG5
-O33GdIjw0FbW88BKmPECwpcY25Tee425nh0Fz01A+K66z+d5hzbR1aKweGVGTMD/
-mgKy527yxCC45zMEBHffditLy4GM5QB/FvbvNnGIVM9ytCnXEhNmp0gbTkVZ5HLe
-pOaEFxlQKsQYm23o3Qq/kcIzB/orYq8zgBURaJ6OSTpkO44InkSKpYAiJXwKeUDC
-MiDeKSyKASfslQDbuxpE+WcSWXVvqQrNDMN5LVwfaz7+K/BARfKs6UpsG4qzmo+X
-8fWCrQMK5HP52HDsLPyyvsyk6LmJ4ZuoRL++OtpoqhcVyR+rAe4StTjokc1hajb1
-fU+14fRDAgMBAAECggEAXBu26Bcr8rYYF86CsYSb5THqTw2yeCowD2JfoMzysC3h
-cnXPLyc7wnKU3L++G4nMiPn/bMWK/732SFc+poqBF+GZZ46plnH/31NrjaXBbQyV
-oLnJ5yBB5+pBcdW9rj613t5CKv2GvcAE61DazbtV3u8b8v772S/E1icU4zZFrLmc
-4H20H6MRe5L8NHnb2GRBcjA8nhcdNLhogxKGIW5ux90SkHRscQKecj//pHn98S7Y
-cDRzGiwuV7AZ9WAgVGNn5niBXsRWTdlzjCvqQax1oa1cbv97ViUl8igNobneZUFb
-zSEE3e32fqT2OFSqWnwMyGQolTJTtpAcBmLXFlFSLQKBgQD5cb91GL5WaDSPbmQS
-HUHdTIkVwoKaJK13PJ1idO7MQ2v8sKSC5oyfSMmENLd7IKVUCSNaXSebuXbU0Gqi
-lTotXHT0k7jToc79W8L184u7266f3lRL4d1irSSBqOs3ABvMnQMInAiq/DQUsxe4
-iMjZoYIrXW3NEiRN9OPwZr2c/QKBgQDxMTq0vRPHPiusVgt3nHu+x+OWVqYiMxTv
-gVCeibbCL40TniQ9f6nYBUwT/zWQzysqe7lWi5UAwnYa6y58l16NKHbEz9oe4D4+
-iI3MIUZUzXTyVoKPxwu2ZOJt2aACzvvnDIY2LgXy4Ts98E5gcxLrbL1qgmz2o1gV
-ZivVWnM6PwKBgQCf0xDwLx1tcbEToZB+xr43090V0x4pM4ztlCnnNrL2r9BWBLwz
-nxLE0DdF/Rz+yEkGEiDTulIxheCstKlOaLzw6YeKWcgX2VotnYjKW/TRNg2qIyLx
-x9M4cWWtqhSjle855/RUpN0s6RFZnfJ56zJ9tu0XafJ7bb9TL7CIjNu65QKBgDlv
-FaGwXKNXZKL3ImfrNXRquQE1xP3j2BpoWsBF3uVC2X9QayTR36n3KPSiEylWi9rj
-93BqcKLrq6AhXMKCcRuABTg8np43m9rcPZfcXJkZC74hZ5nBNkLKpzitV/MTQtz0
-GImSUAxUIf1P2foRrPGuxTQ1tqjMoM8Hs2xsy3+VAoGBAI6JQKdFCLwxrNHx+P3C
-4zC2N/1FscxMHH1Gw7Iyrv/v3/cbWft+kzk63Bg3aVWxoVKU2Y01WahZ0w0kgYuc
-av69+dUheSxYEoUkR7JkMTJg4kO4yufElnnwdF7eMyyCyyfMzbV4TbqMtdLV88is
-hVWUum0biHt3uNTMocJNe7VE
+ADD YOUR PRIVATE KEY HERE
 -----END PRIVATE KEY-----
 )KEY";
 
 const String RSA_PUBLIC_KEY = R"KEY(
 -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6wQNNsNMUaXRuTt9xnSI
-8NBW1vPASpjxAsKXGNuU3nuNuZ4dBc9NQPiuus/neYc20dWisHhlRkzA/5oCsudu
-8sQguOczBAR333YrS8uBjOUAfxb27zZxiFTPcrQp1xITZqdIG05FWeRy3qTmhBcZ
-UCrEGJtt6N0Kv5HCMwf6K2KvM4AVEWiejkk6ZDuOCJ5EiqWAIiV8CnlAwjIg3iks
-igEn7JUA27saRPlnEll1b6kKzQzDeS1cH2s+/ivwQEXyrOlKbBuKs5qPl/H1gq0D
-CuRz+dhw7Cz8sr7MpOi5ieGbqES/vjraaKoXFckfqwHuErU46JHNYWo29X1PteH0
-QwIDAQAB
+ADD YOUR PUBLIC KEY HERE
 -----END PUBLIC KEY-----
 )KEY";
 
@@ -64,10 +33,10 @@ struct EncryptionResult {
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
 
-const char *ssid = "ALHN-B734";
-const char *password = "7459917995";
+const char *ssid = "YOUR WIFI CONFIG";
+const char *password = "YOUR WIFI CONFIG";
 
-String server_name = "http://192.168.1.130:8000";
+String server_name = "YOUR SERVER CONFIG";
 /*END SERVER CONFIGS**************************************************************/
 
 
